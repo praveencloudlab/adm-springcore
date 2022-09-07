@@ -4,6 +4,13 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
+   <bean id="prod1" class="com.cts.ecart.service.ProductServiceImpl" scope="singleton" autowire="byName"/>
+
+   <bean id="prodDao" class="com.cts.ecart.dao.ProductDaoImpl" lazy-init="false"/>
+   <bean id="prodDao1" class="com.cts.ecart.dao.ProductDaoImpl" lazy-init="false"/>
+   
+
+
   
 
 </beans>
