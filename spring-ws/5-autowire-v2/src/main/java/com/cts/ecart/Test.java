@@ -13,6 +13,7 @@ public class Test {
 		ApplicationContext ac=new AnnotationConfigApplicationContext(AppConfig.class);
 		ProductService ps = ac.getBean(ProductService.class);
 		ps.save();
+		ps.findById();
 		
 	}
 
