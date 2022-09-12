@@ -36,7 +36,7 @@ public class AppConfig {
 	// note : bean annotation works only when bean scope defined as prototype
 	// note: bean always creats new object for every invocation in-case of single scope
 	@Bean // @Bean works only if bean type defined as eager
-	void f2() {
+	public void f2() {
 		System.out.println("3.Bean:: f2 executed by "+this.hashCode());
 	}
 	
