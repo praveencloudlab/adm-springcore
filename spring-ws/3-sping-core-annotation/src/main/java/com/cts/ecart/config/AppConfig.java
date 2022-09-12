@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(basePackages = {"com.cts.ecart.service,com.cts.ecart.dao"})
 public class AppConfig {
 	
-	@Bean
+	@Bean // called by spring container at the time of creating object
 	public void f2() {
 		System.out.println(">>> AppConfig:: f2 method");
 	}

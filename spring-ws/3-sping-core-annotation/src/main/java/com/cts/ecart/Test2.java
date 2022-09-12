@@ -14,6 +14,7 @@ public class Test2 {
 	
 		
 		ApplicationContext context= new AnnotationConfigApplicationContext(AppConfig.class);
+		
 		ProductServiceImpl ps = context.getBean(ProductServiceImpl.class);
 		
 		
